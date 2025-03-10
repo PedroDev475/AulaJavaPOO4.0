@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Cachorro cachorro = new Cachorro("Vitor");
+        Cachorro cachorro = new Cachorro("Dante");
         Gato gato = new Gato("Tom");
 
         emitirSom(cachorro);

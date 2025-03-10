@@ -6,9 +6,9 @@ package org.example.Exercicios.ExerciciosHeranca;
 
 
 
-     public LivroDigital(String titulo, String autor, int tamamhoArquivo, int i) {
+     public LivroDigital(String titulo, String autor, int tamanhoArquivo) {
          super(titulo, autor);
-         this.tamamhoArquivo = tamamhoArquivo;
+         this.tamamhoArquivo = tamanhoArquivo;
      }
 
 
@@ -17,7 +17,11 @@ package org.example.Exercicios.ExerciciosHeranca;
      public void exibirDetalhes(){
          System.out.println("Titulo: " + this.titulo);
          System.out.println("Autor: " + this.autor);
-         System.out.println("Tamanho Arquivo:" + this.tamanhoArquivoMB + "MB");
+         System.out.println("Tamanho Arquivo:" + this.tamanhoArquivoMB );
+     }
+
+     public int getTamanhoArquivo() {
+         return tamamhoArquivo;
      }
  }
 

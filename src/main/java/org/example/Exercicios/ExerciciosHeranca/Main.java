@@ -10,7 +10,7 @@ package org.example.Exercicios.ExerciciosHeranca;
             coordenador.adicionarProfessor(professor1);
             coordenador.adicionarProfessor(professor2);
 
-            // Imprimindo informações sobre o coordenador e sua equipe
+
             System.out.println("Coordenador: " + coordenador.getNome());
             for (Professor professor : coordenador.getEquipe()) {
                 System.out.println("Professor: " + professor.getNome() + ", Disciplina: " + professor.getDisciplina());

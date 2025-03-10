@@ -9,11 +9,12 @@ package org.example.Exercicios.ExerciciosHeranca;
      livroFisico livroFisico = new livroFisico("A terra plana", "Super Xandão", 10);
 
 
-     LivroDigital livroDigital = new LivroDigital("A terra é plana", "Super Xandão", 5,0);
+     LivroDigital livroDigital = new LivroDigital("A terra é plana", "Super Xandão", 5);
 
 
 
         System.out.println("Livro Digital:");
+
         livroDigital.exibirDetalhes();
 
         System.out.println();
