@@ -1,13 +1,19 @@
 package org.example.Exercicios.ExerciciosHeranca.ExemplosAbstracao.animal.ExerciciosAbstracao;
 
-public interface CheckIn {
-    void validarDocumento(CheckIn passageiro);
+public class CheckIn {
+    public static void realizarCheckIn(CompanhiaAerea companhia, String documento, int pesoBagagem, boolean vooInternacional) {
+        CompanhiaAerea.mensagemBemVindo();
+        if (companhia.validarDocumento(documento)) {
 
-    void validarDocumentos(Passageiro passageiro);
+            if (companhia.validarBagagem(pesoBagagem, vooInternacional)) {
 
-    void emitircartaoEmbarque(CheckIn passageiro);
-    void ExibirMensagemSeguranca();
+                companhia.emitirCartaoEmbarque("João Silva");
+            } else {
+                System.out.println("Bagagem inválida.");
+            }
+        } else {
+            System.out.println("Não foi possível realizar o check-in devido a documento inválido.");
+        }
+    }
+    }
 
-
-    String getNome();
-}
